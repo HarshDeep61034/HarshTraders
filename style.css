@@ -16,12 +16,13 @@ header{
 
 nav{
     background-color: #FDC632;
-    height: 8vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
     
 }
+
+
 
 .menu{
     display: flex;
@@ -31,8 +32,7 @@ nav{
 }
 
 .logo{
-    position: relative;
-    left: 20vw;
+    margin-left: 30px;
     font-size: 30px;
     cursor: pointer;
 }
@@ -109,7 +109,6 @@ nav{
 
 main{
     width: 100vw;
-    height: 170vh;
 }
 h1.sec1-h2{
     color: #002347;
@@ -149,7 +148,137 @@ span.sec1-span{
 
 .sec1-h2-heading{
     color: #002347;
+    font-size: 22px;
+    font-weight: 600;
 }
 .sec1-para{
     color: #999997;
 }
+
+.sec1-containers{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.sec1-container{
+    margin: 50px;
+    transition: all 0.4s;
+}
+
+.sec1-container:hover{
+    box-shadow: 0 0 10px 5px rgba(0,0,0,0.2);
+    transform: scale(1.04);
+}
+
+div.img-div{
+    width: 400px;
+    height: 330px;
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+
+.first{
+    background: url("https://images.unsplash.com/photo-1492496913980-501348b61469?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8YWdyaWN1bHR1cmV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60");
+}
+
+.second{
+    background: url("https://images.unsplash.com/photo-1557234195-bd9f290f0e4d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGFncmljdWx0dXJlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
+}
+.third{
+    background: url("https://images.unsplash.com/photo-1515150144380-bca9f1650ed9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGFncmljdWx0dXJlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
+}
+div.img-div>img{
+    width: 100%;
+    background-position: center;
+}
+
+.para-grey{
+color: #999997;
+cursor: default;
+}
+h2{
+    cursor: pointer;
+}
+div.info{
+    text-align: left;
+    width: 400px;
+    color: #002347;
+    padding: 20px;
+    background-color: #F9F9FF;
+    transition: all 0.4s;
+}
+div.info:hover{
+    color: #FDC632;
+}
+
+footer{
+    width: 100vw;
+    height: 50vh;
+    background-color: #002347;
+}
+
+p.foot{
+    color: white;
+    text-align: center;
+    font-size: 22px;
+    margin-top: 15px;
+}
+
+.owner{
+    width: 100vw;
+    background-color: #002347;
+    margin: 30px 0px;
+    display: flex;
+}
+
+div.owner-img{
+    height: 315px;
+    width: 315px;
+    background: url("src/img/omkar.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div.owner-bio{
+    height: 315px;
+    width: 315px;
+    margin: 20px;
+    background-color: #F9F9FF;
+    border-radius: 8px;
+}
+
+@media only screen and (max-width: 790px) {
+    nav, .sec1-boxes, .sec1-containers, .owner{
+      flex-direction: column;
+    }
+    .menu{
+        margin-left: 30px;
+    }
+    #sub-head{
+        font-size: 15px;
+        font-weight: 400;
+        margin: 20px;
+    }
+    #head{
+        font-size: 35px;
+    }
+
+    .sec1-container{
+        margin: 10px;
+    }
+
+    div.info{
+        width: 275px;
+        padding: 20px;
+    }
+    div.img-div{
+        width: 275px;
+        height: 170px;
+    }
+  }
